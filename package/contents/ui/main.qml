@@ -17,8 +17,8 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.1
-import QtMultimedia 5.5
+import QtQuick 2.5
+import QtMultimedia 5.6
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 
 Item {
@@ -31,6 +31,7 @@ Item {
         loops: MediaPlayer.Infinite
         volume: wallpaper.configuration.VideoVolume/100
         source: wallpaper.configuration.VideoPath
+        playbackRate: wallpaper.configuration.VideoRate
     }
 
     VideoOutput {

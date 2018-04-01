@@ -30,6 +30,7 @@ ColumnLayout {
     id: root
     property alias cfg_VideoPath: videoPath.text
     property alias cfg_VideoVolume: videoVolume.value
+    property alias cfg_VideoRate: videoRate.value
 
     RowLayout {
         spacing: units.largeSpacing / 2
@@ -62,11 +63,40 @@ ColumnLayout {
             horizontalAlignment: Text.AlignRight
             text: i18nd("plasma_wallpaper_org.kde.plasma.videowallpaper", "Volume:")
         }
-		QtControls.SpinBox {
+		QtControls.Slider {
 			id: videoVolume
+			stepSize: 1
 			minimumValue: 0
 			maximumValue: 100
 		}
+		QtControls.Label {
+            horizontalAlignment: Text.AlignLeft
+            text: videoVolume.value
+        }
+    }
+
+    RowLayout {
+        spacing: units.largeSpacing / 2
+
+        QtControls.Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
+            horizontalAlignment: Text.AlignRight
+            text: i18nd("plasma_wallpaper_org.kde.plasma.videowallpaper", "Rate:")
+        }
+
+        QtControls.Slider {
+			stepSize: 1
+            id: videoRate
+            minimumValue: 50
+            maximumValue: 150
+        }
+        
+        QtControls.Label {
+            horizontalAlignment: Text.AlignLeft
+            text: videoRate.value
+        }
     }
 
     RowLayout {

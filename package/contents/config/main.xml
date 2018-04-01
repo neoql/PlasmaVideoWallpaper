@@ -14,6 +14,10 @@
             <label>Video volume</label>
             <default>50</default>
         </entry>
+        <entry name="VideoRate" type="int">
+            <label>Platback Rate</label>
+            <default>100<default>
+        </entry>
     </group>
 
 </kcfg>

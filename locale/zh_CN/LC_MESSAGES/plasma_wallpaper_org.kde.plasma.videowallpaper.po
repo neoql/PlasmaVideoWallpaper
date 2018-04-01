@@ -20,6 +20,9 @@ msgstr "视频："
 msgid "Volume:"
 msgstr "音量："
 
+msgid "Rate:"
+msgstr "播放速度："
+
 msgid "You can pause or resume the video by click the wallpaper"
 msgstr "你可以点击壁纸来暂停或播放视频"
 
