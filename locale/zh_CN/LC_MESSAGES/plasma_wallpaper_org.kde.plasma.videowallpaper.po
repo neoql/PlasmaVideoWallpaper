@@ -28,3 +28,9 @@ msgstr "你可以点击壁纸来暂停或播放视频"
 
 msgid "Open a video"
 msgstr "打开视频"
+
+msgid "Web Page:"
+msgstr "网页："
+
+msgid "Select a web page"
+msgstr "选择一张网页："

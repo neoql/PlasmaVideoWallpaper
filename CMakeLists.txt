@@ -7,7 +7,8 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 find_package(KF5Plasma REQUIRED)
 
-kpackage_install_bundled_package(package org.kde.plasma.videowallpaper wallpapers wallpaper)
+add_subdirectory(video)
+add_subdirectory(web)
 
 install(DIRECTORY "./locale/"
     DESTINATION "/usr/local/share/locale"

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Web
+Name[zh_CN]=网页
+
+Type=Service
+Icon=plasma
+
+X-KDE-ServiceTypes=Plasma/Wallpaper
+X-KDE-PluginInfo-Author=Neo
+X-KDE-PluginInfo-Email=ll56325827@outlook.com
+X-KDE-PluginInfo-Name=org.kde.plasma.webwallpaper
+X-KDE-PluginInfo-License=LGPLv2+
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://plasma.kde.org/
+X-Plasma-MainScript=ui/main.qml
